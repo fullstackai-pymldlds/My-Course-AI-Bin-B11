@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 df = pd.read_csv(r'ASSIGNMENTS/housing.csv')
-print(df)
+print(df.head())
 
 print("df.shape:      " , df.shape)
 
@@ -24,7 +24,7 @@ y = df['median_house_value'].values.reshape(-1, 1)
 print("x:      " , x)
 print("y:      " , y)
 
-print(df['median_house_value'].value)
+print(df['median_house_value'].value_counts())
 print(df['median_house_value'].value_shape())
 
 print(x.shape)
